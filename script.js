@@ -10,7 +10,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 2. Mobile Navigation (Hamburger Menu) ---
+
+    //--2. Typing Effect ---
+     const words = ["Programmer", "Web Developer", "Problem Solver", "Cybersecurity Enthusiast", "Learner"];
+  let i = 0;
+  let j = 0;
+  let currentWord = "";
+  let isDeleting = false;
+
+  function typeEffect() {
+    currentWord = words[i];
+    let displayText = currentWord.substring(0, j);
+
+    document.querySelector(".typing-effect").textContent = displayText;
+
+    if (!isDeleting && j < currentWord.length) {
+      j++;
+      setTimeout(typeEffect, 150);
+    } else if (isDeleting && j > 0) {
+      j--;
+      setTimeout(typeEffect, 100);
+    } else {
+      if (!isDeleting) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000); 
+      } else {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+        setTimeout(typeEffect, 200);
+      }
+    }
+  }
+
+  typeEffect();
+    // --- 3. Mobile Navigation (Hamburger Menu) ---
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const navLinks = document.getElementById('nav-links');
 
@@ -27,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3. Fade-in Animation on Scroll ---
+    // --- 4. Fade-in Animation on Scroll ---
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -45,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // --- 4. Dynamic Year in Footer ---
+    // --- 5. Dynamic Year in Footer ---
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
