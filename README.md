@@ -32,9 +32,9 @@ Here are a few projects I’ve built and am especially proud of:
 
 | Project | Description | Stack | Links |
 |---|---|---|---|
-| **AI-Powered Code Reviewer** | Tool to automatically review code, find bugs, and suggest improvements for readability & efficiency. | React, Express, Node.js | [Live Demo](https://coderevie.netlify.app) · [GitHub](https://github.com/jitesh7983) |
-| **Weather App** | Weather forecasting app with clean UI and real-time data via OpenWeather API. | JavaScript, CSS, API calls | [Live Demo](https://jitesh7983.github.io/weather-app-js/weather-app-js/index.html) · [GitHub](https://jitesh7983.github.io/weather-app-js/weather-app-js/) |
-| **Rock Paper Scissors** | A browser-game where you play Rock-Paper-Scissors vs the computer. | JavaScript, HTML, CSS | [Live Demo](https://jitesh7983.github.io/Game/js_projects/index.html) · [GitHub](https://github.com/jitesh7983.github.io/Game/js_projects/) |
+| **AI-Powered Code Reviewer** | Tool to automatically review code, find bugs, and suggest improvements for readability & efficiency. | React, Express, Node.js | [Live Demo](https://coderevie.netlify.app) · [GitHub](https://github.com/jitesh7983/AI-code-reviewer) |
+| **Weather App** | Weather forecasting app with clean UI and real-time data via OpenWeather API. | JavaScript, CSS, API calls | [Live Demo](https://jitesh7983.github.io/weather-app-js/weather-app-js/index.html) · [GitHub](https://github.com/jitesh7983/weather-app-js) |
+| **Rock Paper Scissors** | A browser-game where you play Rock-Paper-Scissors vs the computer. | JavaScript, HTML, CSS | [Live Demo](https://jitesh7983.github.io/Game/js_projects/index.html) · [GitHub](https://github.com/jitesh7983/Game) |
 
 *(You can swap in more or other projects, change descriptions, add screenshots etc.)*
 
